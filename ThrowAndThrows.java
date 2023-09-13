@@ -5,7 +5,7 @@ public class ThrowAndThrows {
 		System.out.print(divide(10, 0));
 	}
 
-	public static double divide(int a, int b) throws RuntimeException {
+	public static double divide(int a, int b) throws IllegalArgumentException {
 		if (b == 0) {
 			throw new IllegalArgumentException("Cannot divide by 0");
 		}
